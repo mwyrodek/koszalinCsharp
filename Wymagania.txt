@@ -1,0 +1,28 @@
+Ksiazka Telefoniczna:
+
+Opcje:
+
+Znajdź pracowinka
+Zobacz pracowinka
+Lokacja - wyswietla wyszyski pracowinków  dajej lokacji 
+
+
+---------------------------
+
+Linia komend:
+Find Imie
+Find Imie i Lokacja
+
+Check BagdeID
+
+Loc Nazwa miejsca
+AddEmployee
+
+---------------------------------
+Pracowink:
+Name				String	
+SurName				String
+BadgeID				int
+Department			Enum
+InternalPhone		String
+
