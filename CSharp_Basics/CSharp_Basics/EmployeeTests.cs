@@ -12,6 +12,7 @@ namespace CSharp_Basics
         {
             Console.WriteLine("wtf");
         }
+
         [Test]
         public void Employee_Creation_FiledProperlyField()
         {
@@ -62,6 +63,7 @@ namespace CSharp_Basics
 
 
         }
+
         //północ
         /*id 
         1-5 - 5 cyfr
@@ -74,16 +76,26 @@ namespace CSharp_Basics
         {
             Assert.Throws<ArgumentOutOfRangeException>(
                 () => new ItEmployee("Emka", 666, Locations.Koszalin, "C#")
-                );
+            );
         }
 
-        [TestCase(Locations.Koszalin,11111)]
-        [TestCase(Locations.ZielonaGora,66666)]
+        [TestCase(Locations.Koszalin, 11111)]
+        [TestCase(Locations.ZielonaGora, 66666)]
         public void Employe_IDisInWrongRange_ThrowsArgrumentOutOfRange(Locations loc, int badge)
         {
             Assert.Throws<ArgumentOutOfRangeException>(
                 () => new Employee("Emka", badge, loc)
             );
+        }
+
+        [Test]
+        public void Example()
+        {
+            ItEmployee employee = new ItEmployee("Emka", 66666, Locations.Koszalin, "C#");
+            ItEmployee employee2 = new ItEmployee("Emka", 66666, Locations.Koszalin, "C#");
+
+            Assert.AreEqual(employee2, employee);
+
         }
     }
 }

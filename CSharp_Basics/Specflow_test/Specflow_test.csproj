@@ -79,6 +79,12 @@
     <None Include="CalcScenario.feature" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSharp_Basics\CSharp_Basics.csproj">
+      <Project>{648d1b14-d6d4-4b9b-adca-198954fbaaa7}</Project>
+      <Name>CSharp_Basics</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

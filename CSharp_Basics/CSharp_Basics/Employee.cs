@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace CSharp_Basics
 {
     public class Employee
     {
-        public string Name { get; }
+        public string Name { get; set; }
         public int BadgeID { get; }
         public Locations Location { get; }
 
@@ -67,6 +68,11 @@ namespace CSharp_Basics
             {
                 return false;
             }
+        }
+
+        public string PrintEmployee()
+        {
+            return $"Name:{Name} Badge:{BadgeID}";
         }
     }
 }

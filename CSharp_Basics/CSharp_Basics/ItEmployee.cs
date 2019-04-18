@@ -12,5 +12,10 @@
         {
             this.ProgrammingLanguage = programmingLanguage;
         }
+
+        public new string PrintEmployee()
+        {
+            return $"Name: {Name} Badge: {BadgeID} Lang: {ProgrammingLanguage}";
+        }
     }
 }
